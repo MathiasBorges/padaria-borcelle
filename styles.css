@@ -1,0 +1,125 @@
+*{
+  scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(221, 139, 81);
+    color: #fff;
+    padding: 15px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 5vmax;
+}
+.logoTitulo{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logoTitulo img{
+  width: 10vmax;
+  border-radius: 50%;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a span{
+  opacity: 0;transition: .5s;
+}
+nav ul li a:hover span{
+  opacity: 1;
+}
+nav ul li a:hover{
+  transition: .5s;
+  color: #f4c663;
+  filter: drop-shadow(0 0 1px black);
+}
+
+section {
+    padding: 50px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    font-size: 2em;
+    color: #d2691e;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.card button{
+  width:25vw;height: 3.5rem;padding: 2.5%;
+  position: relative;left: 50%;translate: -50% 0;
+  background-color: white;border: 1px solid;outline: none;
+  border-radius: 10px;cursor: pointer;transition: 1s;
+}
+.card button:hover{
+  filter: drop-shadow(0 0 5px blue);
+}
+h3 {
+    margin-top: 0;
+    color: #d2691e;
+}
+#marketing a{
+
+}
+footer {
+    background-color: #3b3b3b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
