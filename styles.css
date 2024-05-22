@@ -6,7 +6,15 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    opacity: 0;
+    animation: show 1s ease-in forwards;
 }
+@keyframes show{
+  to{
+    opacity: 1;
+  }
+}
+
 
 header {
     background-color: rgb(221, 139, 81);
